@@ -70,8 +70,8 @@ function App() {
  } else {
    return(
     <div className="w-7xl h-208 flex flex-col items-center">
-      <h1 className='font-medium text-[39px]'>You got <strong>{score}</strong> out of {questions.length} questions correctly</h1>
       <img src={rocket} alt="" />
+      <h1 className='font-medium text-[39px]'>You got <strong>{score}</strong> out of {questions.length} questions correctly</h1>
       <Reset
       resetbtn={reset}/>
     </div>
