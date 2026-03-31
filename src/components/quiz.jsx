@@ -7,12 +7,14 @@ function Quiz( { data, onAnswer, showFeedback, selected, current } ) {
         }
         if (answer === correct) return "bg-[#21B164]";
         if(answer === selected) return "bg-[#F73737]";
+        if (answer !== correct) return "text-[#DAD4D4]";
+        if(answer !== selected) return "text-[#DAD4D4]";
        
     }
 
     const letters=["A", "B", "C", "D"];
     return(
-        <div>
+        <>
 
             <p className="mt-35.75 text-[22.73px] font-bold w-134.25">{current+1}.  {question}</p>
             <div className="grid gap-5 mt-4">
@@ -25,7 +27,7 @@ function Quiz( { data, onAnswer, showFeedback, selected, current } ) {
                         </button>
                 ))}
             </div>
-        </div>
+        </>
     )
 
 }
