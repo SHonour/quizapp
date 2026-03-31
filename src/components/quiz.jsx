@@ -17,7 +17,7 @@ function Quiz( { data, onAnswer, showFeedback, selected, current } ) {
             <p className="mt-35.75 text-[22.73px] font-bold w-134.25">{current+1}.  {question}</p>
             <div className="grid gap-5 mt-4">
                 {answers.map((answer, index)=>(
-                    <button className={`${getButtonstyle(answer)} w-134.25 h-16.75 border border-[#726464] flex flex-row items-center text-center justify-start
+                    <button className={`${getButtonstyle(answer)} w-134.25 h-16.75 border border-[#726464] flex flex-row items-center justify-start
                         rounded-4xl font-bold text-[22.73px] cursor-pointer pl-10`} 
                         key={index} 
                         onClick={()=> onAnswer(answer)}
